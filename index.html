@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amanda Bradford — Founder • Board Member • AI Builder • Investor</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1a1a1a;--gold:#c9a227;--gold-light:#e8c547;--gold-dim:rgba(201,162,39,.12);--text:#e8e8e8;--text-dim:#888;--font:'Segoe UI',system-ui,-apple-system,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;overflow-x:hidden}
+a{color:var(--gold);text-decoration:none;transition:color .2s}
+a:hover{color:var(--gold-light)}
+
+/* Animations */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* Nav */
+nav{position:fixed;top:0;width:100%;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:100;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,162,39,.08)}
+nav .logo{font-size:1.1rem;font-weight:600;letter-spacing:.5px;color:var(--gold)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{color:var(--text-dim);font-size:.85rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:500}
+nav ul a:hover{color:var(--gold)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 2rem 4rem;position:relative}
+.hero::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,162,39,.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;display:flex;align-items:center;gap:4rem;position:relative;z-index:1}
+.hero-photo{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#8a6d14);display:flex;align-items:center;justify-content:center;font-size:3.5rem;font-weight:300;color:var(--bg);flex-shrink:0;letter-spacing:2px}
+.hero-text h1{font-size:3.2rem;font-weight:300;letter-spacing:1px;margin-bottom:.6rem}
+.hero-text h1 span{color:var(--gold)}
+.hero-tagline{font-size:1rem;text-transform:uppercase;letter-spacing:4px;color:var(--text-dim);margin-bottom:1.5rem;font-weight:400}
+.hero-bio{font-size:1.1rem;color:var(--text-dim);max-width:560px;line-height:1.8}
+.hero-bio strong{color:var(--text);font-weight:500}
+
+/* Sections */
+section{padding:5rem 2rem}
+.container{max-width:1000px;margin:0 auto}
+.section-label{text-transform:uppercase;letter-spacing:4px;font-size:.75rem;color:var(--gold);margin-bottom:1rem;font-weight:600}
+.section-title{font-size:2rem;font-weight:300;margin-bottom:2.5rem;letter-spacing:.5px}
+
+/* What I Do */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.card{background:var(--surface);border:1px solid rgba(201,162,39,.1);border-radius:12px;padding:2rem;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.card-icon{font-size:1.8rem;margin-bottom:1rem}
+.card h3{font-size:1rem;font-weight:600;margin-bottom:.5rem;letter-spacing:.5px}
+.card p{font-size:.9rem;color:var(--text-dim);line-height:1.6}
+
+/* Featured */
+.featured{background:var(--surface)}
+.logos{display:flex;flex-wrap:wrap;gap:2.5rem;align-items:center;justify-content:center}
+.logos span{font-size:1.3rem;font-weight:700;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;opacity:.5;transition:opacity .3s}
+.logos span:hover{opacity:1;color:var(--gold)}
+
+/* Speaking */
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.topic{padding:1.2rem 1.5rem;background:var(--surface);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;font-size:.95rem;color:var(--text-dim)}
+
+/* Contact */
+.contact-section{text-align:center}
+.cta-btn{display:inline-block;padding:1rem 3rem;background:linear-gradient(135deg,var(--gold),#8a6d14);color:var(--bg);font-weight:600;font-size:1rem;border-radius:50px;letter-spacing:1px;text-transform:uppercase;transition:transform .3s,box-shadow .3s;margin-top:1rem}
+.cta-btn:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(201,162,39,.3);color:var(--bg)}
+.socials{display:flex;justify-content:center;gap:2rem;margin-top:2.5rem}
+.socials a{color:var(--text-dim);font-size:.85rem;letter-spacing:1px;text-transform:uppercase;font-weight:500}
+.socials a:hover{color:var(--gold)}
+
+/* Footer */
+footer{text-align:center;padding:2rem;color:var(--text-dim);font-size:.75rem;border-top:1px solid rgba(201,162,39,.08)}
+
+@media(max-width:768px){
+  nav ul{display:none}
+  .hero-inner{flex-direction:column;text-align:center;gap:2rem}
+  .hero-text h1{font-size:2.2rem}
+  .hero-bio{margin:0 auto}
+  .hero-photo{width:140px;height:140px;font-size:2.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Amanda Bradford</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#speaking">Speaking</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-photo">AB</div>
+    <div class="hero-text">
+      <h1>Amanda <span>Bradford</span></h1>
+      <p class="hero-tagline">Founder • Board Member • AI Builder • Investor</p>
+      <p class="hero-bio">
+        Built <strong>The League</strong> as a solo founder — from 419 alpha testers to 300K monthly actives across 155 cities, $15M revenue, raising only $2.3M. Acquired by <strong>Match Group</strong>. Now building with AI, advising at the intersection of tech and culture, and investing in the next generation of founders.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="fade-up">
+  <div class="container">
+    <p class="section-label">Background</p>
+    <p style="font-size:1.05rem;color:var(--text-dim);line-height:1.9;max-width:700px">
+      Carnegie Mellon engineering → Google strategic partnerships → Stanford MBA → Founded & coded The League (designed the matching algorithm) → $30M exit to Match Group → Investment Partner at <strong style="color:var(--text)">XFactor Ventures</strong> (helped raise $500M+ backing female founders) → Former <strong style="color:var(--text)">Sequoia Scout</strong> → Now deep in AI agents, angel investing, and board work.
+    </p>
+  </div>
+</section>
+
+<section id="work" class="fade-up">
+  <div class="container">
+    <p class="section-label">What I Do</p>
+    <p class="section-title">Where I spend my time</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>AI & Agents</h3>
+        <p>Building AI agents and exploring the frontier of what's possible with autonomous systems.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏛</div>
+        <h3>Board Seats</h3>
+        <p>Strategic board roles at the intersection of consumer tech, marketplaces, and AI.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3>Angel Investing</h3>
+        <p>Backing bold founders early. Previously Sequoia Scout writing $50K-$100K checks.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧭</div>
+        <h3>Tech Advising</h3>
+        <p>Helping founders navigate product, growth, fundraising, and exits from firsthand experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured fade-up">
+  <div class="container" style="text-align:center">
+    <p class="section-label">Featured In</p>
+    <div class="logos">
+      <span>Fortune</span>
+      <span>Forbes</span>
+      <span>TechCrunch</span>
+      <span>Harvard Law</span>
+      <span>Bloomberg</span>
+      <span>Inc.</span>
+    </div>
+  </div>
+</section>
+
+<section id="speaking" class="fade-up">
+  <div class="container">
+    <p class="section-label">Speaking & Advisory</p>
+    <p class="section-title">Topics I speak on</p>
+    <div class="topics">
+      <div class="topic">Solo founding → exit: building a $30M company with $2.3M raised</div>
+      <div class="topic">AI agents & the future of autonomous software</div>
+      <div class="topic">Marketplace design & network effects</div>
+      <div class="topic">Fundraising as a female founder — and investing in them</div>
+      <div class="topic">From engineer to CEO: technical founders & product vision</div>
+      <div class="topic">The future of trust, identity, and verified communities</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section fade-up">
+  <div class="container">
+    <p class="section-label">Get in Touch</p>
+    <p class="section-title">Let's talk</p>
+    <p style="color:var(--text-dim);margin-bottom:1rem">For board seats, advising, investing, or speaking inquiries.</p>
+    <a href="https://intro.co/AmandaBradford" class="cta-btn" target="_blank">Book a Meeting</a>
+    <div class="socials">
+      <a href="https://linkedin.com/in/amandabradford" target="_blank">LinkedIn</a>
+      <a href="https://x.com/amandabradford" target="_blank">X</a>
+      <a href="https://instagram.com/amandabradford" target="_blank">Instagram</a>
+      <a href="https://github.com/pearlouise" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Amanda Bradford. All rights reserved.</p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
