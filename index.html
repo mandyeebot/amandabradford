@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amanda Bradford</title>
 <meta property="og:title" content="Amanda Bradford">
-<meta property="og:description" content="Founder • Advisor • AI Builder • Investor">
+<meta property="og:description" content="Founder. Product Builder. AI Engineer.">
 <meta property="og:image" content="assets/images/card.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@amandabradford">
@@ -46,6 +46,24 @@ section{padding:100px 24px}
 .story p{font-size:17px;line-height:1.9;margin-bottom:20px;opacity:.85;text-align:center}
 .story strong{color:#FFF500;font-weight:600}
 
+/* BUILDING NOW */
+.building{background:#0a0a0a}
+.building-intro{font-size:17px;line-height:1.9;opacity:.85;text-align:center;margin-bottom:48px}
+.building-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px}
+.building-card{border:1px solid rgba(255,245,0,.15);border-radius:12px;padding:36px 28px;transition:border-color .3s,transform .3s}
+.building-card:hover{border-color:#FFF500;transform:translateY(-4px)}
+.building-card h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:20px;letter-spacing:2px;text-transform:uppercase;color:#FFF500;margin-bottom:14px}
+.building-card p{font-size:15px;line-height:1.7;opacity:.8}
+.building-card .tag{display:inline-block;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#0a0a0a;background:#FFF500;border-radius:4px;padding:3px 10px;margin-bottom:12px}
+
+/* CASE STUDY */
+.casestudy{background:#111}
+.case-block{border-left:3px solid #FFF500;padding:0 0 0 28px;margin-bottom:40px}
+.case-block h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:#FFF500;margin-bottom:12px}
+.case-block p{font-size:16px;line-height:1.8;opacity:.82;margin-bottom:10px}
+.case-block .stat{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:1px;color:#fff;opacity:.6;margin-top:8px}
+.case-block .stat span{color:#FFF500;opacity:1}
+
 /* WHAT I DO */
 .work{background:#0a0a0a}
 .work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;margin-top:48px}
@@ -54,20 +72,31 @@ section{padding:100px 24px}
 .work-card h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:20px;letter-spacing:2px;text-transform:uppercase;color:#FFF500;margin-bottom:14px}
 .work-card p{font-size:15px;line-height:1.7;opacity:.8}
 
+/* WRITING */
+.writing{background:#111}
+.writing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:40px}
+.writing-card{border:1px solid rgba(255,245,0,.15);border-radius:12px;padding:28px;transition:border-color .3s,transform .3s;text-decoration:none;color:#fff;display:block}
+.writing-card:hover{border-color:#FFF500;transform:translateY(-4px)}
+.writing-card .date{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#FFF500;opacity:.7;margin-bottom:10px}
+.writing-card h3{font-family:'Oswald',sans-serif;font-weight:500;font-size:18px;letter-spacing:1px;margin-bottom:10px;line-height:1.4}
+.writing-card p{font-size:14px;line-height:1.7;opacity:.7}
+
 /* FEATURED */
-.featured{background:#111;text-align:center}
+.featured{background:#0a0a0a;text-align:center}
 .press-strip{font-family:'Oswald',sans-serif;font-weight:300;font-size:clamp(16px,2.5vw,22px);letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:20px}
 .press-strip span{color:#fff;opacity:.7;transition:opacity .3s}
 .press-strip span:hover{opacity:1;color:#FFF500}
 
 /* CTA */
-.cta{background:#0a0a0a;text-align:center}
+.cta{background:#111;text-align:center}
 .cta p{font-size:18px;margin-bottom:32px;opacity:.85}
-.btn{display:inline-block;font-family:'Oswald',sans-serif;font-weight:500;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#FFF500;border:2px solid #FFF500;border-radius:50px;padding:14px 44px;text-decoration:none;transition:background .3s,color .3s,transform .3s}
+.btn{display:inline-block;font-family:'Oswald',sans-serif;font-weight:500;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#FFF500;border:2px solid #FFF500;border-radius:50px;padding:14px 44px;text-decoration:none;transition:background .3s,color .3s,transform .3s;margin:8px}
 .btn:hover{background:#FFF500;color:#0a0a0a;transform:scale(1.04)}
+.btn-ghost{color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff;border-color:#fff}
 
 /* FOOTER */
-footer{background:#111;border-top:1px solid rgba(255,245,0,.1);padding:48px 24px;text-align:center}
+footer{background:#0a0a0a;border-top:1px solid rgba(255,245,0,.1);padding:48px 24px;text-align:center}
 footer .social-icons{margin-bottom:24px}
 footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:.4}
 
@@ -81,7 +110,7 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   .nav-links{gap:16px}
   .nav-links a{font-size:11px;letter-spacing:1px}
   section{padding:72px 20px}
-  .work-grid{grid-template-columns:1fr}
+  .work-grid,.building-grid,.writing-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -91,8 +120,9 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   <a href="#" class="nav-logo">Amanda Bradford</a>
   <div class="nav-links">
     <a href="#story">About</a>
-    <a href="#work">Work</a>
-    <a href="#featured">Press</a>
+    <a href="#building">Building</a>
+    <a href="#casestudy">Case Study</a>
+    <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -101,8 +131,8 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   <div class="hero-bg"></div>
   <div class="hero-content">
     <h1 class="fade-up">Amanda Bradford</h1>
-    <p class="subtitle fade-up">Founder &bull; Advisor &bull; AI Builder &bull; Investor</p>
-    <p class="tagline fade-up">Built a dating empire as a solo founder. Acquired by Match Group. Now building with AI.</p>
+    <p class="subtitle fade-up">Founder &bull; Product Builder &bull; AI Engineer</p>
+    <p class="tagline fade-up">When I couldn't find the product I wanted, I built it. Wrote the algorithm, coded the app, scaled to 155 cities, sold for 13x. Now building AI-native products at the frontier.</p>
     <div class="social-icons fade-up">
       <!-- X/Twitter -->
       <a href="https://twitter.com/amandabradford" target="_blank" rel="noopener" aria-label="X/Twitter">
@@ -111,10 +141,6 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
       <!-- Instagram -->
       <a href="https://instagram.com/amandabradford" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      </a>
-      <!-- Facebook -->
-      <a href="https://facebook.com/amandabradford" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       </a>
       <!-- LinkedIn -->
       <a href="https://linkedin.com/in/amandabradford" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -128,44 +154,128 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
       <a href="mailto:amanda@amandabradford.com" aria-label="Email">
         <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
       </a>
-      <!-- Intro -->
-      <a href="https://intro.co/AmandaBradford" target="_blank" rel="noopener" aria-label="Intro">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-      </a>
     </div>
   </div>
 </section>
 
 <section class="story" id="story">
   <div class="section-inner">
-    <h2 class="section-title fade-up">The Story</h2>
-    <p class="fade-up">Built <strong>The League</strong> as a solo founder — from 419 alpha testers to <strong>300K monthly actives</strong>, 155 cities, and <strong>$15M in revenue</strong>.</p>
-    <p class="fade-up">Raised only <strong>$2.3M</strong>. Designed and coded the matching algorithm herself.</p>
-    <p class="fade-up">Acquired by <strong>Match Group ($MTCH)</strong> — the world's largest dating conglomerate.</p>
-    <p class="fade-up">Now: building with AI, advising companies, and investing in the next generation of founders.</p>
+    <h2 class="section-title fade-up">The Builder</h2>
+    <p class="fade-up">Solo technical founder. Built <strong>The League</strong> from scratch — designed and coded the <strong>ML matching algorithm</strong>, shipped iOS v1, scaled to <strong>300K MAU across 155 cities</strong>.</p>
+    <p class="fade-up">Raised <strong>$2.3M total</strong>. Grew to <strong>$16M ARR</strong> and <strong>$6M EBITDA</strong> before acquisition. Returned <strong>13x to investors</strong>. Sold to <strong>Match Group ($MTCH)</strong> in a competitive process vs. Bumble.</p>
+    <p class="fade-up">Previously: <strong>Google</strong> (BigQuery 0→1 launch), <strong>Salesforce</strong> (top 1% quota), <strong>Sequoia Scout</strong>, <strong>XFactor Ventures</strong> investment partner.</p>
+    <p class="fade-up">Now: building <strong>AI-native consumer marketplaces</strong> at Hatch Labs. Anthropic shareholder. Obsessed with what happens when LLMs meet verified financial data.</p>
+  </div>
+</section>
+
+<section class="building" id="building">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">What I'm Building Now</h2>
+    <p class="building-intro fade-up">At <strong>Hatch Labs</strong>, I'm building the next generation of high-trust consumer marketplaces — where LLMs and Plaid-verified financial data replace the self-reported noise that breaks most matching products. One infrastructure layer. Three markets.</p>
+    <div class="building-grid">
+      <div class="building-card fade-up">
+        <div class="tag">Singles</div>
+        <h3>Verified Dating</h3>
+        <p>LLM-powered matching where financial verification replaces fake profiles. Conversational onboarding extracts real intent. Match explanations built on verified signals.</p>
+      </div>
+      <div class="building-card fade-up">
+        <div class="tag">Investor</div>
+        <h3>Vetted Deal Network</h3>
+        <p>Plaid-verified investment history powers thesis-to-deal semantic matching. LLMs read investment memos and match them to investor profiles — no cold outreach.</p>
+      </div>
+      <div class="building-card fade-up">
+        <div class="tag">Jobs</div>
+        <h3>Comp-Verified Talent</h3>
+        <p>Plaid-verified income data as ground truth for compensation matching. LLM-powered JD↔resume semantic fit — beyond keywords to actual capability.</p>
+      </div>
+      <div class="building-card fade-up">
+        <div class="tag">AI Tooling</div>
+        <h3>Building with Claude</h3>
+        <p>Prototyping with Claude Code, building multi-agent systems, and exploring MCP integrations. I build before I fundraise — always have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="casestudy" id="casestudy">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">0→1: How I Built & Sold The League</h2>
+    <p style="text-align:center;font-size:16px;opacity:.7;margin-bottom:48px" class="fade-up">A product development story — not a CEO story.</p>
+
+    <div class="case-block fade-up">
+      <h3>The Problem</h3>
+      <p>Dating apps were hot-or-not swiping. No professional context, no intent signals, no privacy from coworkers. I wanted a partner who wasn't intimidated by ambition. I built the app I wished existed.</p>
+    </div>
+
+    <div class="case-block fade-up">
+      <h3>The Build</h3>
+      <p>Designed and coded the matching algorithm myself — professional verification via LinkedIn, behavioral scoring, network graph signals to block coworkers. Shipped iOS v1 as the sole engineer. Started with 419 alpha testers in SF.</p>
+      <p class="stat">Stack: <span>iOS, ML matching, custom CRM (HTML/CSS/JS)</span></p>
+    </div>
+
+    <div class="case-block fade-up">
+      <h3>The Monetization Iteration</h3>
+      <p>Launched free, then tested $20/mo. Realized we needed a real business model. Moved to annual subscriptions at $179/yr — conversion held. Then built 4 tiers up to $999/wk for power users who wanted full database access.</p>
+      <p class="stat">ARPU: <span>$75 → $275</span> &nbsp;|&nbsp; ARR: <span>$0 → $16M</span> &nbsp;|&nbsp; M1 Retention: <span>90%</span></p>
+    </div>
+
+    <div class="case-block fade-up">
+      <h3>The Scale</h3>
+      <p>Launched in 155 cities across 4 countries in 4 years. Built city launch playbooks, owned marketing strategy and execution, ran A/B tests on conversion and churn. 50% DAU/MAU. $6M EBITDA before exit.</p>
+      <p class="stat">MAU: <span>300K</span> &nbsp;|&nbsp; Cities: <span>155</span> &nbsp;|&nbsp; Total raised: <span>$2.3M</span></p>
+    </div>
+
+    <div class="case-block fade-up">
+      <h3>The Exit</h3>
+      <p>Ran a competitive M&A process with Match Group and Bumble simultaneously. Chose Match for the distribution and international infrastructure. Post-acquisition, advised Tinder on ARPU growth and retention strategy.</p>
+      <p class="stat">Return: <span>13x to investors</span> &nbsp;|&nbsp; Acquirer: <span>Match Group ($MTCH)</span></p>
+    </div>
   </div>
 </section>
 
 <section class="work" id="work">
   <div class="section-inner">
-    <h2 class="section-title fade-up">What I Do</h2>
+    <h2 class="section-title fade-up">AI & Investing</h2>
     <div class="work-grid">
       <div class="work-card fade-up">
-        <h3>AI &amp; Agents</h3>
-        <p>Building autonomous AI systems. Exploring what's possible when AI has memory, tools, and personality.</p>
+        <h3>Anthropic</h3>
+        <p>Shareholder and active user. Building with Claude Code. Deeply embedded in the frontier AI ecosystem.</p>
       </div>
       <div class="work-card fade-up">
-        <h3>Board Seats &amp; Advising</h3>
-        <p>Strategic guidance for startups navigating growth, fundraising, and exits.</p>
+        <h3>XFactor Ventures</h3>
+        <p>Investment Partner. Backing exceptional founders — especially women building at the intersection of technology and human behavior.</p>
       </div>
       <div class="work-card fade-up">
-        <h3>Angel Investing</h3>
-        <p>Former Sequoia Scout. Investment Partner at XFactor Ventures. Backing ambitious founders.</p>
+        <h3>Sequoia Scout</h3>
+        <p>Former Sequoia Scout (via Lee Linden). Part of the network that finds and backs the next generation of category-defining companies.</p>
       </div>
       <div class="work-card fade-up">
-        <h3>Speaking</h3>
-        <p>Dating apps, founder journey, AI, marketplace growth, M&amp;A, bootstrapping vs fundraising.</p>
+        <h3>Board & Advising</h3>
+        <p>Strategic guidance for startups on 0→1 product development, monetization architecture, fundraising, and exits.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing" id="writing">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Writing</h2>
+    <div class="writing-grid">
+      <a href="#" class="writing-card fade-up">
+        <div class="date">Coming Soon</div>
+        <h3>What 10 Years of Matching Algorithms Taught Me About LLMs</h3>
+        <p>The surprising parallels between building ML-powered dating and building with frontier AI — and why verified data is still the hardest problem.</p>
+      </a>
+      <a href="#" class="writing-card fade-up">
+        <div class="date">Coming Soon</div>
+        <h3>Bias Towards Action: A 0→1 Product Philosophy</h3>
+        <p>Why I shipped before I fundraised, iterated before I scaled, and built the thing I wanted to exist in the world rather than waiting for permission.</p>
+      </a>
+      <a href="#" class="writing-card fade-up">
+        <div class="date">Coming Soon</div>
+        <h3>Building the Trust Layer: How Plaid + LLMs Fix Consumer Matching</h3>
+        <p>The biggest problem in consumer marketplaces isn't discovery — it's verification. Here's how I'm solving it at Hatch Labs.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -174,16 +284,17 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   <div class="section-inner">
     <h2 class="section-title fade-up">Featured In</h2>
     <div class="press-strip fade-up">
-      <span>Fortune</span> &nbsp;&bull;&nbsp; <span>Forbes</span> &nbsp;&bull;&nbsp; <span>Harvard Law School</span> &nbsp;&bull;&nbsp; <span>TechCrunch</span> &nbsp;&bull;&nbsp; <span>Business Insider</span>
+      <span>Fortune</span> &nbsp;&bull;&nbsp; <span>Forbes</span> &nbsp;&bull;&nbsp; <span>TechCrunch</span> &nbsp;&bull;&nbsp; <span>Stanford GSB</span> &nbsp;&bull;&nbsp; <span>Business Insider</span> &nbsp;&bull;&nbsp; <span>Carnegie Mellon</span>
     </div>
   </div>
 </section>
 
 <section class="cta" id="contact">
   <div class="section-inner">
-    <h2 class="section-title fade-up">Book a Meeting</h2>
-    <p class="fade-up">Want to connect? Book a 1:1 on Intro.</p>
-    <a href="https://intro.co/AmandaBradford" target="_blank" rel="noopener" class="btn fade-up">Book on Intro</a>
+    <h2 class="section-title fade-up">Let's Connect</h2>
+    <p class="fade-up">Building something interesting? Want to talk AI, product, or 0→1?</p>
+    <a href="mailto:amanda@amandabradford.com" class="btn fade-up">Email Me</a>
+    <a href="https://linkedin.com/in/amandabradford" target="_blank" rel="noopener" class="btn btn-ghost fade-up">LinkedIn</a>
   </div>
 </section>
 
