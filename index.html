@@ -112,6 +112,16 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   section{padding:72px 20px}
   .work-grid,.building-grid,.writing-grid{grid-template-columns:1fr}
 }
+
+/* BACKED BY */
+.backedby{background:#0a0a0a}
+.backedby-intro{font-size:17px;line-height:1.9;opacity:.85;text-align:center;margin-bottom:40px}
+.investors-group{margin-bottom:32px}
+.investors-label{font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,245,0,.6);margin-bottom:14px;text-align:center}
+.investors-list{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px}
+.investors-list span{font-size:15px;opacity:.75;transition:opacity .3s}
+.investors-list span:hover{opacity:1;color:#FFF500}
+.investors-divider{width:1px;height:20px;background:rgba(255,245,0,.2);align-self:center;display:inline-block}
 </style>
 </head>
 <body>
@@ -132,7 +142,7 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   <div class="hero-content">
     <h1 class="fade-up">Amanda Bradford</h1>
     <p class="subtitle fade-up">Founder &bull; Product Builder &bull; AI Engineer</p>
-    <p class="tagline fade-up">When I couldn't find the product I wanted, I built it. Wrote the algorithm, coded the app, scaled to 155 cities, sold for 13x. Now building AI-native products at the frontier.</p>
+    <p class="tagline fade-up">When I couldn't find the dating product I wanted, I built it (The League). Wrote the algorithm, coded the app, scaled to 155 cities, sold for 13x ($MTCH). Now building AI-native products at the frontier.</p>
     <div class="social-icons fade-up">
       <!-- X/Twitter -->
       <a href="https://twitter.com/amandabradford" target="_blank" rel="noopener" aria-label="X/Twitter">
@@ -280,6 +290,42 @@ footer p{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:2px;text-
   </div>
 </section>
 
+
+<section class="backedby" id="backedby">
+  <div class="section-inner">
+    <h2 class="section-title fade-up">Backed By</h2>
+    <p class="backedby-intro fade-up">Raised $2.3M from top-tier institutional and angel investors including:</p>
+    <div class="investors-group fade-up">
+      <div class="investors-label">Institutional</div>
+      <div class="investors-list">
+        <span>Ridge Ventures</span><span class="investors-divider"></span>
+        <span>Cowboy Ventures</span><span class="investors-divider"></span>
+        <span>XSeed Capital</span><span class="investors-divider"></span>
+        <span>Sherpa Capital</span><span class="investors-divider"></span>
+        <span>Structure Capital</span><span class="investors-divider"></span>
+        <span>TTCER Partners</span><span class="investors-divider"></span>
+        <span>606 Capital Partners</span>
+      </div>
+    </div>
+    <div class="investors-group fade-up">
+      <div class="investors-label">Angels &amp; Operators</div>
+      <div class="investors-list">
+        <span>Irv Grousbeck <em style="opacity:.5;font-size:13px">(Stanford GSB)</em></span><span class="investors-divider"></span>
+        <span>Naomi Gleit <em style="opacity:.5;font-size:13px">(VP Meta)</em></span><span class="investors-divider"></span>
+        <span>Lee Linden <em style="opacity:.5;font-size:13px">(Sequoia Scout)</em></span><span class="investors-divider"></span>
+        <span>Russ Siegelman</span><span class="investors-divider"></span>
+        <span>Mark Leslie</span><span class="investors-divider"></span>
+        <span>Peter Kelly</span><span class="investors-divider"></span>
+        <span>Umesh Maheshwari</span><span class="investors-divider"></span>
+        <span>Tina Sharkey</span><span class="investors-divider"></span>
+        <span>Jon Vlassopulos</span><span class="investors-divider"></span>
+        <span>David Williams</span><span class="investors-divider"></span>
+        <span>Jason Hathaway</span><span class="investors-divider"></span>
+        <span>Anderson Pugash</span>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="featured" id="featured">
   <div class="section-inner">
     <h2 class="section-title fade-up">Featured In</h2>
@@ -318,3 +364,4 @@ document.addEventListener('DOMContentLoaded',()=>{
 </script>
 </body>
 </html>
+
